@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Piano</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js"></script>
+</head>
+<body>
+  <audio src="./assets/c3.mp3" id="c3"></audio> 
+  <audio src="./assets/c-3.mp3" id="c-3"></audio>
+  <audio src="./assets/d3.mp3" id="d3"></audio>
+  <audio src="./assets/d-3.mp3" id="d-3"></audio>
+  <audio src="./assets/e3.mp3" id="e3"></audio>
+  <audio src="./assets/f3.mp3" id="f3"></audio>
+  <audio src="./assets/f-3.mp3" id="f-3"></audio>
+  <audio src="./assets/g3.mp3" id="g3"></audio>
+  <audio src="./assets/g-3.mp3" id="g-3"></audio>
+  <audio src="./assets/a3.mp3" id="a3"></audio>
+  <audio src="./assets/a-3.mp3" id="a-3"></audio>
+  <audio src="./assets/b3.mp3" id="b3"></audio>
+  <audio src="./assets/c4.mp3" id="c4"></audio>
+  <audio src="./assets/c-4.mp3" id="c-4"></audio>
+  <audio src="./assets/d4.mp3" id="d4"></audio>
+  <audio src="./assets/d-4.mp3" id="d-4"></audio>
+  <audio src="./assets/e4.mp3" id="e4"></audio>
+  <audio src="./assets/f4.mp3" id="f4"></audio>
+  <audio src="./assets/f-4.mp3" id="f-4"></audio>
+  <audio src="./assets/g4.mp3" id="g4"></audio>
+  <audio src="./assets/g-4.mp3" id="g-4"></audio>
+  <audio src="./assets/a4.mp3" id="a4"></audio>
+  <audio src="./assets/a-4.mp3" id="a-4"></audio>
+  <audio src="./assets/b4.mp3" id="b4"></audio>
+  <div id="blank1">
+
+  </div>
+  <div id="blank2">
+
+  </div>
+  <div class="container">
+    <h2 id="title">Virtual Piano</h2>
+    <div class="keyboard" id="keyboard">
+      <div class="keyboard_attributes">
+        <div>
+          <img src="./assets/speaker.png" alt="" width="70%">
+        </div>
+        <div class="center" display="block">
+          <img src="./assets/center.png" alt="" width="95%">
+        </div>
+        <div>
+          <img src="./assets/speaker.png" alt="" width="70%">
+        </div>
+      </div>
+      <button class="white-key" onclick="c3()">C3</button>
+      <button class="black-key" id="black" onclick="c_3()"></button>
+      <button class="white-key" onclick="d3()">D3</button>
+      <button class="black-key" id="black2" onclick="d_3()"></button>
+      <button class="white-key" onclick="e3()">E3</button>
+      <button class="white-key" onclick="f3()">F3</button>
+      <button class="black-key" id="black3" onclick="f_3()"></button>
+      <button class="white-key" onclick="g3()">G3</button>
+      <button class="black-key" id="black4" onclick="g_3()"></button>
+      <button class="white-key" onclick="a3()">A3</button>
+      <button class="black-key" id="black5" onclick="a_3()"></button>
+      <button class="white-key" onclick="b3()">B3</button>
+      <br class="res">
+      <br class="res">
+      <button class="white-key" onclick="c4()">C4</button>
+      <button class="black-key" onclick="c_4()" id="black6"></button>
+      <button class="white-key" onclick="d4()">D4</button>
+      <button class="black-key" onclick="d_4()" id="black7"></button>
+      <button class="white-key" onclick="e4()">E4</button>
+      <button class="white-key" onclick="f4()">F4</button>
+      <button class="black-key" onclick="f_4()" id="black8"></button>
+      <button class="white-key" onclick="g4()">G4</button>
+      <button class="black-key" onclick="g_4()" id="black9"></button>
+      <button class="white-key" onclick="a4()">A4</button>
+      <button class="black-key" onclick="a_4()" id="black10"></button>
+      <button class="white-key" onclick="b4()">B4</button>  
+    </div>
+  </div>
+  <div class="color_picker">
+    <input type="color" id="colors" value="#a8dcfa">
+    <button onclick="colorpicker()" id="effect1">Choose from color picker and click me</button>
+    <br><br>
+    <button onclick="randomcolor()" id="effect2">Click me for random color</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.res {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 40%;
+}
+
+.container h2 {
+  position: absolute;
+  margin-top: -24%;
+  margin-left: 32%;
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 4px #90ccf4;
+}
+
+#blank1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #90ccf4;
+  border-radius: 50%;
+  margin-top: -20%;
+  margin-left: -80%;
+  -webkit-box-shadow: 0 10px 25px 0 #a8dcfa;
+          box-shadow: 0 10px 25px 0 #a8dcfa;
+}
+
+#blank2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #90ccf4;
+  border-radius: 50%;
+  margin-top: -20%;
+  margin-left: 80%;
+  -webkit-box-shadow: 0 10px 25px 0 #a8dcfa;
+          box-shadow: 0 10px 25px 0 #a8dcfa;
+}
+
+.keyboard {
+  background-color: #a8dcfa;
+  padding: 20px;
+  padding-top: 70px;
+  border-radius: 20px 20px 40px 40px;
+  font-size: 12px;
+  font-weight: 400;
+  -webkit-box-shadow: 0 10px 25px 0 #a8dcfa;
+          box-shadow: 0 10px 25px 0 #a8dcfa;
+}
+
+.keyboard_attributes {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  margin-top: -80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.center img {
+  border-radius: 10px;
+}
+
+.keyboard button {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+  border-radius: 20px 20px 40px 40px;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 100px;
+}
+
+.white-key {
+  width: 40px;
+  height: 140px;
+  margin: 1px;
+  -webkit-box-shadow: inset #cfcfcf 0 -10px 0 0;
+          box-shadow: inset #cfcfcf 0 -10px 0 0;
+  cursor: pointer;
+  color: grey;
+}
+
+.white-key:active {
+  -webkit-transform: translate(0, 4px);
+          transform: translate(0, 4px);
+  -webkit-box-shadow: inset #E6F1E6 0 -2px 0 0;
+          box-shadow: inset #E6F1E6 0 -2px 0 0;
+}
+
+.black-key {
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  background-color: black;
+  z-index: 99;
+  cursor: pointer;
+  -webkit-transform: translate(-15px, -10px);
+          transform: translate(-15px, -10px);
+  -webkit-box-shadow: inset #3a3a3a 0 -10px 0 0, #90ccf4 0 0 0 2px;
+          box-shadow: inset #3a3a3a 0 -10px 0 0, #90ccf4 0 0 0 2px;
+  color: white;
+}
+
+.black-key:active {
+  -webkit-transform: translate(-15px, -2px);
+          transform: translate(-15px, -2px);
+  height: calc(90px - 8px);
+}
+
+.color_picker {
+  margin-top: 30%;
+  text-align: center;
+}
+
+.color_picker button {
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.color_picker button:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-bottom: -20%;
+  }
+  .res {
+    display: block;
+  }
+  .color_picker {
+    margin-top: 100%;
+  }
+  .container h2 {
+    margin-top: -70px;
+    margin-left: 18%;
+  }
+  #blank1 {
+    width: 15%;
+    height: 15%;
+  }
+  #blank2 {
+    width: 18%;
+    height: 18%;
+  }
+  .keyboard {
+    padding-top: 80px;
+  }
+  .keyboard_attributes {
+    -ms-grid-columns: 30% 30%;
+        grid-template-columns: 30% 30%;
+    grid-gap: 35%;
+    margin-top: -90px;
+  }
+  .keyboard_attributes div img {
+    width: 100%;
+  }
+  .center {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container h2 {
+    margin-top: -20%;
+    margin-left: 11%;
+  }
+  .keyboard {
+    padding: 15px;
+  }
+  .keyboard_attributes {
+    display: none;
+  }
+  .color_picker {
+    margin-top: 120%;
+  }
+  .color_picker button {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
